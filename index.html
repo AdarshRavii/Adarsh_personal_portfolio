@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/eba619255b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="namelogo.png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack JAVA Developer</p>
+                <h1>Hii, I'm <span>Adarsh</span> Ravi <br> from India</h1>
+            </div>
+        </div>
+    </div>
+    <!----------------about section ------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                     <img src="mypic.jpg" alt="mypicture">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Having completed my secondary education at Manasarowar Pushkarini Vidyashrama and pursued Pre-University studies at Mahesh PU College, specializing in the PCMB stream, I furthered my education by enrolling in Mechanical Engineering at Maharaja Institute of Technology. Throughout my academic journey, I developed a keen interest in coding, particularly in Java. This interest led me to choose Java as an elective subject, and over time, I acquired proficiency in the language. In my final year of engineering, I was drawn to the IT sector and decided to pursue a career in this dynamic field after graduation. To enhance my skills and prepare for this transition, I enrolled in QSpiders, where I received hands-on training in Java Full Stack Development. This experience solidified my enthusiasm for coding and equipped me with the necessary skills to seek opportunities in the IT job market, where I am currently exploring and eager to contribute my expertise.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('training')">Training</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>PROGRAMMING LANGUAGE</span><br>JAVA.</li>
+                            <li><span>FRONT-END TECHNOLOGIES</span><br>
+                            HTML,CSS and JAVASCRIPT.
+                            </li>
+                            <li><span>JEE</span><br>JDBC and SERVLETS.</li>
+                            <li><span>FRAMEWORKS</span><br>HIBERNATE,SPRING-CORE,SPRING-MVC and SPRING-BOOT.</li>
+                            <li><span>DATABASE</span><br>MYSQL.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="training">
+                        <ul>
+                            <li><span>QSPIDERS (JUL23 - DEC23)</span><br>FULL STACK JAVA DEVELOPER</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>MAHARAJA INSTITUTE OF TECHNOLOGY MYSORE (2019 - 2023)</span><br>B.E IN MECHANICAL ENGINEERING</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------- projects ----------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">Projects</h1>
+            <div class="project-list">
+                <div>
+                   <h2>Employee Management System</h2>
+                   <br>
+                   <p>Developed an Employee Management System utilizing Spring MVC and Hibernate frameworks, seamlessly integrating with MySQL for efficient data storage and retrieval. Implemented an intuitive front-end interface using HTML and CSS, enhancing user experience and facilitating streamlined employee data management. </p>
+                   <br>
+                   <a href="https://github.com/AdarshRavii/mvc_project" class="git-link">Learn more....</a>
+                </div>
+
+                <div>
+                    <h2>Course Management System</h2>
+                    <br>
+                    <p>
+                     Designed and implemented a Course Management System with Spring Boot and Hibernate, ensuring efficient data management and retrieval from MySQL database. Employed Postman for comprehensive API testing, ensuring robust functionality and seamless integration. 
+                    </p>
+                    <br>
+                    <br>
+                    <a href="https://github.com/AdarshRavii/boot_pro-" class="git-link">Learn more....</a>
+                 </div>
+
+                 <div>
+                    <h2>Guess the secret number</h2>
+                    <br>
+                    <p>
+                        Developed an interactive "Guess the Secret Number" game using HTML, CSS, and JavaScript, leveraging DOM techniques for dynamic user interface updates. Demonstrated proficiency in front-end development by creating an engaging and responsive gaming experience. Utilized JavaScript to handle user input, validate guesses, and dynamically update the DOM for an interactive web-based game. </p>
+                    <br>
+                    <a href="https://github.com/AdarshRavii/mvc_project" class="git-link">Learn more....</a>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------contact---------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact Me</h1>
+                <br>
+                <p><i class="fa-solid fa-paper-plane"></i> adarshravi34@gmail.com</p>
+                <br>
+                <p><i class="fa-solid fa-phone"></i> +91 7019854221</p>
+                <br>
+                <div class="social-icons">
+                    <a href="https://github.com/dashboard"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/adarsh-ravi-4mh17201"><i class="fa-brands fa-linkedin"></i></i></a>
+                </div>
+                <a href="AdarshRavimerged.pdf" download class="button">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>      
+    <div class="copyright">
+        <p>Copyright © Adarsh Ravi. Made with <i class="fa-solid fa-heart"></i>  </p>
+    </div>
+
+    </div>
+    
+        
+
+    <script src="script.js"></script>
+</body>
+</html>
